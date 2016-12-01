@@ -7,8 +7,8 @@
 ####
 
 team_name = 'Jaysen and Collin' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'Betray first then collude, if they betray '
+strategy_name = 'Revenge'
+strategy_description = 'This strategy will begin with a betrayal. It will then collude in the remaining moves UNLESS the opponent betrays twice in a row. If the opponent consecutively betrays twice at anytime past the first move, the user will betray as well for the remainder of the round.'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
