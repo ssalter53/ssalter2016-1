@@ -41,7 +41,7 @@ import team10, team11, team12, team13, team14
 betray = example1
 collude = example0
 
-modules = [example0, team2]
+modules = [example4, team2]
 for module in modules:
     reload(module)
     print ('reloaded',module)

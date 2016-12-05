@@ -27,7 +27,12 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
      #first move
     
+    if len(my_history) == 0:
+        return 'b'
     #React to the opponent's last move
+    if their_history[-1] == 'b':
+        return 'b'
+    return 'b'
         
 
 
