@@ -8,12 +8,9 @@
 
 team_name = 'Team 7' # Only 10 chars displayed.
 strategy_name = 'KV'
-<<<<<<< HEAD
 strategy_description = 'Always betray'
-=======
 strategy_description = 'Always Betray'
->>>>>>> origin/master
-    
+
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
