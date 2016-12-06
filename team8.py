@@ -10,10 +10,11 @@ team_name = 'AppleSoft' # Only 10 chars displayed.
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
-def move(my_history, their_history, my_score, their_score):
-    if their_history[-1] =='b':
+def move(my_history, their_history, my_score, their_score): 
+
+    if their_history[-1] == 'b':
         return 'b'
-    elif their_history[-1] =='c':
+    elif their_history[-1] == 'c':
         return 'c'
     elif their_score > 0:
         return 'b'
