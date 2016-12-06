@@ -11,12 +11,22 @@ strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
+    if their_history[-1] =='b':
+        return 'b'
+    elif their_history[-1] =='c':
+        return 'c'
+    elif their_score > 0:
+        return 'b'
+    else:
+        return 'c'
+
+
+        
+        
     
-    Make my move.
-    Returns 'c' or 'b'. 
-    '''
+   # Arguments accepted: my_history, their_history are strings.
+    ###Returns 'c' or 'b'. 
+    
 #added this change because it was needed
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
