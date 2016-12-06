@@ -7,13 +7,13 @@
 ####
 
 team_name = 'HotCheetos' # Only 10 chars displayed.
-strategy_name = 'Random'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'Random ALL DAY'
+strategy_description = 'RANDOM'
 import random
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
-    
+    Test
     Make my move.
     Returns 'c' or 'b'. 
     '''
