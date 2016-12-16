@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Best Crew' # Only 10 chars displayed.
+team_name = 'Best Crew' 
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
 
@@ -70,7 +70,7 @@ def randim4():
 
 def copy(my_history, their_history):
     if len(my_history)==0:
-        return random.choice(['c','b'])
+        return 'b'
     else:
         return their_history[-1]
 
@@ -115,25 +115,15 @@ def move(my_history, their_history, my_score, their_score):
    
     
     if len(my_history)==0:
-        strategy = random.choice(['winning', 'copy', 'straight_bs', 'cbb', 'retaliate', 'alt', 'randim'])
-        if strategy == 'winning':
-            winning(my_score, their_score)
-        if strategy == 'copy':
-            copy(my_history, their_history)
+        strategy = random.choice(['copy', 'straight_bs', 'retaliate'])
         if strategy == 'straight_bs':
             straight_bs()
-        if strategy == 'cbb':
-            cbb(my_history)
+        if strategy == 'copy':
+            copy()
         if strategy == 'retaliate':
-            retaliate(my_history, their_history)
-        if strategy == 'alt':
-            alt(my_history)
-        if strategy == 'randim':
-            randim()
-        if len(my_history)%3==0:
-            adapt(my_score, their_score)
+            retaliate()
             if change == 1:
-                strategy = random.choice(['winning', 'copy', 'straight_bs', 'cbb', 'retaliate', 'alt', 'randim'])
+                strategy = random.choice(['copy', 'straight_bs', 'retaliate'])
        
         
     
