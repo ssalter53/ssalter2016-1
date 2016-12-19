@@ -357,7 +357,7 @@ def copy_template():
         filename = os.path.join(directory, target)
         with open(filename, 'w') as target_file:
             target_file.write(''.join(source))                                   
-                     
+                      
 def post_to_api():
     pass
 
@@ -379,4 +379,4 @@ def post_to_file(string, filename='tournament.txt', directory=''):
 ### Call main_play() if this file is executed
 if __name__ == '__main__':
     scores, moves, reports = main_play(modules[0:4])   
-    section0, section1, section2, section3 = reports
+    section0, section1, section2, section3 = reports 
