@@ -1,16 +1,19 @@
-####
-# Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
-
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
+team_name = 'Nark' # Only 10 chars displayed.
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
-    
+import random
 def move(my_history, their_history, my_score, their_score):
+    coin = random.randint(0,1)
+    if coin == 1:
+        return 'b'
+    elif coin == 0:
+        return 'c'
+    if their_history == ['c', 'c', 'c']:
+        return 'c'
+    else:
+        return 'b'
+    if their_history[-1]=='b':
+        return 'c' 
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
