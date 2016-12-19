@@ -3,13 +3,17 @@ strategy_name = 'Passive Aggressive'
 strategy_description = 'Collude until some one betrayes then betray'
     
 def move(my_history, their_history, my_score, their_score):
-
+   
     if len(their_history) > 1:
-    
+       
         if their_history[-1] == 'c':
             return 'c'
         elif their_history[-1] == 'b':
             return 'b'
+            
+    if len(their_history) > 110:
+        
+        return 'b'
     
     return 'c'
 
